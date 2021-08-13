@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane id="BorderPane" fx:id="aboutPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softwareInterfaces.FXMLAboutWindowController">
+   <center>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="92.0" style="-fx-background-color: #FFF;" vbarPolicy="ALWAYS" vvalue="0.11" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="330.0" style="-fx-background-color: #FFF;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="About" textAlignment="CENTER" wrappingWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="8.0">
+                     <font>
+                        <Font name="Raleway Light" size="40.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="IDAT - Image Data Augmentation Tool" textAlignment="CENTER" wrappingWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="57.0">
+                     <font>
+                        <Font name="Raleway Light" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text lineSpacing="4.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The IDAT tool is aimed mainly at researchers who use deep convolutional networks and who wish to increase, in a different way from conventional Data Augmentation techniques, the image databases. The IDAT tool provides techniques for improving brightness, contrastand sharpness, some traditional and others more specific, all available in the literature. Two options are offered, techniques with predefined parameters and techniques with adjustable parameters." textAlignment="CENTER" wrappingWidth="710.0" y="100.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="110.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="40.0" layoutY="-15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This tool was developed at the Universidade Federal do Espírito Santo (Brazil) in the UFES/CEUNES/DCEL department by Günter Marchiore Gaede and Jacques Facon. It received financial support from Fapes, Fundação de Amparo à Pesquisa do Estado do Espírito Santo." wrappingWidth="710.0" y="340.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="40.0" layoutY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The bibliography related to each technique is listed in alphabetical order:" wrappingWidth="710.0" y="440.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Enhancement:" underline="true" wrappingWidth="710.0" y="490.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Logarithmic mapping  - Alanna Rennan “Grey Level Enhancement”, https://www.slideserve.com/alanna/grey-level-enhancement, 2020." wrappingWidth="710.0" y="540.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Square root mapping - Alanna Rennan “Grey Level Enhancement”,  https://www.slideserve.com/alanna/grey-level-enhancement, 2020." wrappingWidth="710.0" y="600.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Traditional  equalization - “Digital Image Processing: PIKS Inside, Third Edition”,  William K. Pratt, 2001.Traditional  equalization - “Digital Image Processing: PIKS Inside, Third Edition”,  William K. Pratt, 2001." wrappingWidth="710.0" y="660.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Automatic and Parametric Enhancement:" underline="true" wrappingWidth="710.0" y="770.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BBOBMO - J. Jasper, S. Berlin Shaheema, e S. Berlin Shiny, “Natural Image Enhancement Using a Biogeography Based Optimization Enhanced with Blended Migration Operator”, Hindawi Publishing Corporation, Mathematical Problems in Engineering, Volume 2014, Article ID 232796, pp. 1-11, 2014." wrappingWidth="710.0" y="820.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BHE2PL  - Pabla B. Aquino-Morínigo, Freddy R. Lugo-Solís,  Diego P. Pinto-Roa1, Horacio Legal Ayala, José Luis Vázquez Noguera, “Bi-histogram equalization using two plateau limits”, Signal Image and Video Processing, pp. 1-9, • December 2016." wrappingWidth="710.0" y="940.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BLWHE  -  Jeena Baby, V. Karunakaran, “Bi-Level Weighted Histogram Equalization with Adaptive Gamma Correction”, International Journal of Computational Engineering Research, Volume  04, Issue 3, pp. 25-30, March 2014." wrappingWidth="710.0" y="1040.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BOHE - S. C. Hoo and H. Ibrahim, &quot;Evaluations on Different Window Size towards the Performance of Block Overlapped Histogram Equalization Method,&quot; 5th International Conference on Intelligent Systems, Modelling and Simulation, pp. 249-254, Langkawi, 2014." wrappingWidth="710.0" y="1140.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DCMHE - Chen Yongliang, Wang Huabin, Tao Liang, “Dynamic Contrast Enhancement Using Multiple and Clipped Histogram Equalization”, Sensors &amp; Transducers, Vol. 25, Special Issue, pp. 211-218, December 2013." wrappingWidth="710.0" y="1260.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ISIHE - Sangeeta Rani,  Ashwini Kumar,  Kuldeep Singh, ”Illumination based Sub Image Histogram Equalization: A Novel Method of Image Contrast Enhancement”,  International Journal of Computer Applications (0975 – 8887) Volume 119 , No.20, pp. 14-19, June 2015" wrappingWidth="710.0" y="1360.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LIP-LogImgProc  - Deng, G. Cahill, W., Tobin, G. R., “The study of Logarithmic Image Processing Model and its Application to Image Enhancement”, IEEE Transactions on Image Processing, Volume 4, No. 4, pp. 506-512, 1995." wrappingWidth="710.0" y="1480.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MFHH - G. Krell, H.R. Tizhoosh, T. Lilienblum, C.J. Moore, B. Michaelis, “Enhancement and associative restoration of electronic portal images in radiotherapy”, International Journal of Medical Informatics, No. 49, pp. 157–171, 1997." wrappingWidth="710.0" y="1580.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PWBHEPL - Abhisek Paul, Prantik Biswas, Paritosh Bhattacharya and Santi Prasad Maity, &quot;Power-log based plateau limit histogram equalization algorithm for infrared image enhancement,&quot; 2017 Tenth International Conference on Contemporary Computing (IC3), Noida, pp. 1-5, 2017." wrappingWidth="710.0" y="1680.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SONAR - Cervenka, Pierre; Moustier, Christian, ”Sidescan Sonar Image Processing Techniques”, IEEE Journal of Oceanic Engineering, Volume 18, Issue 2, pp. 108-122, April 1993." wrappingWidth="710.0" y="1790.0" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </AnchorPane>
+         </content>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </ScrollPane>
+   </center>
+   <top>
+      <MenuBar prefHeight="29.0" style="-fx-opacity: 1; -fx-background-color: #FFF;" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Menu">
+               <items>
+                  <MenuItem fx:id="returnButton" mnemonicParsing="false" onAction="#returnToMainPage" text="Start Page" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Image Processing">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#gotoGrayPage" text="Grayscale Data Augmentation" />
+                  <MenuItem mnemonicParsing="false" onAction="#gotoColorPage" text="Color Data Augmentation" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

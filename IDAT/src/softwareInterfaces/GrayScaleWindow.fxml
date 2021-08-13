@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="grayPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softwareInterfaces.GrayScaleWindowController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="1366.0" style="-fx-opacity: 1; -fx-background-color: #FFF;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Menu">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem fx:id="returnButton" mnemonicParsing="false" onAction="#returnToMainPage" text="Start Page" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Image Processing">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#gotoColorPage" text="Color Data Augmentation" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#gotoAboutPage" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Text layoutX="489.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grayscale Data Augmentation">
+         <font>
+            <Font name="Raleway Light" size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="inputButton" layoutX="25.0" layoutY="129.0" mnemonicParsing="false" onAction="#selectFolder" prefHeight="25.0" prefWidth="91.0" text="Input Folder" />
+      <Button fx:id="outputButton" layoutX="25.0" layoutY="172.0" mnemonicParsing="false" onAction="#selectFolder" text="Output Folder" />
+      <Label fx:id="inputFolderPath" layoutX="140.0" layoutY="132.0" text="Input Folder Path">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="outputFolderPath" layoutX="140.0" layoutY="175.0" text="Output Folder Path">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="354.0" layoutY="236.0" orientation="VERTICAL" prefHeight="240.0" prefWidth="6.0" />
+      <Separator layoutX="874.0" layoutY="236.0" orientation="VERTICAL" prefHeight="240.0" prefWidth="6.0" />
+      <Text layoutX="34.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Enhancement">
+         <font>
+            <Font name="Raleway" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="374.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Automatic Enhancement">
+         <font>
+            <Font name="Raleway" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="894.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parametric Enhancement">
+         <font>
+            <Font name="Raleway" size="15.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="bbobmo" layoutX="374.0" layoutY="276.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="488.0" text="BBOBMO" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="runButton" layoutX="629.0" layoutY="695.0" mnemonicParsing="false" onAction="#runProcess" prefHeight="25.0" prefWidth="165.0" text="Run" />
+      <CheckBox fx:id="FHHCinza" layoutX="894.0" layoutY="366.0" mnemonicParsing="false" text="MFHH">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="BOHECinza" layoutX="894.0" layoutY="326.0" mnemonicParsing="false" text="BOHE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="PWBHEPLCinza" layoutX="894.0" layoutY="406.0" mnemonicParsing="false" text="PWBHEPL">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="BLWHECinza" layoutX="894.0" layoutY="276.0" mnemonicParsing="false" text="BLWHE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="DCMHECinza" layoutX="374.0" layoutY="446.0" mnemonicParsing="false" text="DCMHE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="ISIHECinza" layoutX="374.0" layoutY="486.0" mnemonicParsing="false" text="ISIHE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="BHE2PLCinza" layoutX="374.0" layoutY="326.0" mnemonicParsing="false" text="BHE2PL">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="SONARCinza" layoutX="894.0" layoutY="446.0" mnemonicParsing="false" text="SONAR">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="BLWHECinzaFixed" layoutX="374.0" layoutY="366.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="480.0" text="BLWHE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="SONARCinzaFixed" layoutX="374.0" layoutY="566.0" mnemonicParsing="false" text="SONAR">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="PWBHEPLCinzaFixed" layoutX="374.0" layoutY="526.0" mnemonicParsing="false" text="PWBHEPL">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="BOHECinzaFixed" layoutX="374.0" layoutY="406.0" mnemonicParsing="false" text="BOHE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="RunStatus" layoutX="651.0" layoutY="663.0" text="Run Status: Waiting">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="TRADITIONALCinza" layoutX="32.0" layoutY="366.0" mnemonicParsing="false" text="Traditional Enhancement">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="SquareRootCinza" layoutX="32.0" layoutY="326.0" mnemonicParsing="false" text="Square Root Normalization">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="LogarithmCinza" layoutX="32.0" layoutY="286.0" mnemonicParsing="false" text="Logarithmic Normalization">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="LIPCinza" layoutX="894.0" layoutY="486.0" mnemonicParsing="false" text="LIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="LIPCinzaFixed" layoutX="374.0" layoutY="606.0" mnemonicParsing="false" text="LIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="SubFolder" layoutX="970.0" layoutY="175.0" mnemonicParsing="false" text="Create Sub-Folder">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <!--
+      <fx:include fx:id="doubleDialog" source="/Support/Dualdialog.fxml" />
+      -->
+   </children>
+</AnchorPane>
